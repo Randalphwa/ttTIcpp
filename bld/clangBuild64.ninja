@@ -42,7 +42,7 @@ build $outdir/tinyxmlerror.obj: compile tinyxmlerror.cpp | $outdir/pch.obj
 
 build $outdir/tinyxmlparser.obj: compile tinyxmlparser.cpp | $outdir/pch.obj
 
-build ../lib64/ttTIcpp.lib : lib $
+build lib64/ttTIcpp.lib : lib $
   $outdir/ticpp.obj $
   $outdir/tinystr.obj $
   $outdir/tinyxml.obj $
