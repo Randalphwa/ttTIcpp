@@ -4,8 +4,6 @@ Options:
     Project:     ttTIcpp      # project name
     Exe_type:    lib          # [window | console | lib | dll]
     Pch:         pch.h        # name of precompiled header file, or "none" if not using precompiled headers
-    TargetDir64: lib64     # 64-bit target directory
-    TargetDir32: lib32     # 32-bit target directory
     CFlags_cmn:  /std:c++17   # flags to pass to the compiler in all builds
 
     Optimize:    space        # [space | speed] optimization to use in release builds
@@ -14,7 +12,9 @@ Options:
     Crt_dbg:     dll          # [static | dll] type of CRT to link to in debug builds
 
     64Bit:       true         # [true | false] indicates if project can be built as a 64-bit target
+    TargetDir64: lib64        # 64-bit target directory
     32Bit:       true         # [true | false] indicates if project can be built as a 32-bit target
+    TargetDir32: lib32        # 32-bit target directory
 
 Files:
     ticpp.cpp
