@@ -4,7 +4,8 @@ Options:
     Project:     ttTIcpp      # project name
     Exe_type:    lib          # [window | console | lib | dll]
     Pch:         pch.h        # name of precompiled header file, or "none" if not using precompiled headers
-    CFlags_cmn:  /std:c++17   # flags to pass to the compiler in all builds
+
+    CFlags_cmn:  /std:c++17 -DUNICODE -D_UNICODE -DTIXML_USE_TICPP
 
     Optimize:    space        # [space | speed] optimization to use in release builds
     Warn:        4            # [1-4] warning level
