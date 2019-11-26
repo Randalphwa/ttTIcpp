@@ -5,7 +5,8 @@ Options:
     Exe_type:    lib          # [window | console | lib | dll]
     Pch:         pch.h        # name of precompiled header file, or "none" if not using precompiled headers
 
-    CFlags_cmn:  /std:c++17 -DUNICODE -D_UNICODE -DTIXML_USE_TICPP
+    IncDirs:     precomp      # additional directories for header files
+    CFlags_cmn:  /std:c++17 -DUNICODE -D_UNICODE -DTIXML_USE_TICPP    # flags to pass to the compiler in all builds
 
     Optimize:    space        # [space | speed] optimization to use in release builds
     Warn:        4            # [1-4] warning level
