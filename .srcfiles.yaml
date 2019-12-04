@@ -1,4 +1,4 @@
-# Requires ttBld.exe version 1.2.0 or higher to process
+# Requires ttBld.exe version 1.4.0 or higher to process
 
 Options:
     Project:     ttTIcpp      # project name
@@ -13,10 +13,7 @@ Options:
     Crt_rel:     dll          # [static | dll] type of CRT to link to in release builds
     Crt_dbg:     dll          # [static | dll] type of CRT to link to in debug builds
 
-    64Bit:       true         # [true | false] indicates if project can be built as a 64-bit target
-    TargetDir64: lib64        # 64-bit target directory
-    32Bit:       true         # [true | false] indicates if project can be built as a 32-bit target
-    TargetDir32: lib32        # 32-bit target directory
+    TargetDir:   lib          # target directory
 
 Files:
     ticpp.cpp
